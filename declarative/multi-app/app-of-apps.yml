@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://gitub.com/tatimun/gitops-argocd-master.git
+    repoURL: https://www.github.com/tatimun/gitops-argocd-master.git
     targetRevision: HEAD
     path: ./declarative/app-of-apps
   destination:
