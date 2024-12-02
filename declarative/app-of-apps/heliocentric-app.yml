@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: heliocentric-app
-  namespace: argocd
+  namespace: openshift-gitops
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
   project: default
 
   source:
-    repoURL: http://165.22.209.118:3000/siddharth/gitops-argocd.git
+    repoURL: https://www.github.com/tatimun/gitops-argocd-master.git
     targetRevision: HEAD
     path: ./declarative/manifests/heliocentric-model
    
